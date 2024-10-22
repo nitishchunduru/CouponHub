@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CouponHub</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">CouponHub</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#coupons">Coupons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="ml-3">
+                        <button class="btn btn-outline-light" onclick="login()">Login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="jumbotron text-center" style="background-image: url('images/hero.jpg'); background-size: cover; background-position: center; color: white;">
+        <div class="container">
+            <h2 class="display-4 text-dark">Your Marketplace for Tickets & Coupons</h2>
+
+            <p class="lead text-dark">Buy, sell, and trade event tickets and discount coupons all in one place.</p>
+            <a href="#explore" class="btn btn-success btn-lg">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About CouponHub</h2>
+            <p class="lead text-center">CouponHub is your one-stop platform to browse, purchase, and trade event tickets and discount coupons. We provide secure transactions and a user-friendly experience for our customers.</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Explore Events</h2>
+            <p class="lead text-center">Find tickets for concerts, sports, theater performances, and more.</p>
+            <!-- Event Listings will go here -->
+        </div>
+    </section>
+
+    <!-- Coupons Section -->
+    <section id="coupons" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Discover Coupons</h2>
+            <p class="lead text-center">Get discounts on dining, shopping, entertainment, and services.</p>
+            <!-- Coupon Listings will go here -->
+        </div>
+    </section>
+
+    <!-- Explore Events Section with Listings -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore Events</h2>
+            <div class="row">
+
+
+
+                <!-- Event 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/concert.jpg" class="card-img-top" alt="Concert Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Rock Concert</h5>
+                            <p class="card-text">Date: Nov 15, 2024<br>Venue: City Arena<br>Price: $50</p>
+                            <a href="#" class="btn btn-primary">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Event 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/sports.jpg" class="card-img-top" alt="Sports Event Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Football Match</h5>
+                            <p class="card-text">Date: Dec 5, 2024<br>Venue: National Stadium<br>Price: $70</p>
+                            <a href="#" class="btn btn-primary">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/theater.jpg" class="card-img-top" alt="Theater Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Broadway Show</h5>
+                            <p class="card-text">Date: Dec 20, 2024<br>Venue: Grand Theatre<br>Price: $90</p>
+                            <a href="#" class="btn btn-primary">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Coupons Section with Listings -->
+    <section id="coupons" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Discover Coupons</h2>
+            <div class="row">
+                
+                
+                <!-- Coupon 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/restaurant.jpg" class="card-img-top" alt="Restaurant Discount">
+                        <div class="card-body">
+                            <h5 class="card-title">50% Off Dining</h5>
+                            <p class="card-text">Category: Dining<br>Expires: Nov 30, 2024</p>
+                            <a href="#" class="btn btn-success">Use Coupon</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Coupon 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/shopping.jpg" class="card-img-top" alt="Shopping Discount">
+                        <div class="card-body">
+                            <h5 class="card-title">30% Off Shopping</h5>
+                            <p class="card-text">Category: Shopping<br>Expires: Dec 15, 2024</p>
+                            <a href="#" class="btn btn-success">Use Coupon</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Coupon 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/entertainment.jpg" class="card-img-top" alt="Entertainment Discount">
+                        <div class="card-body">
+                            <h5 class="card-title">Buy 1 Get 1 Free Movie Tickets</h5>
+                            <p class="card-text">Category: Entertainment<br>Expires: Dec 31, 2024</p>
+                            <a href="#" class="btn btn-success">Use Coupon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+ 
+
+
+<!-----------------------------------new frq up2 ---------------------------------------------->
+
+
+<!-- Blog Section -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Latest from Our Blog</h2>
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/blog-1.jpg" class="card-img-top" alt="Blog Post 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Top Tips for Getting the Best Event Tickets</h5>
+                        <p class="card-text">Discover insider tips for scoring the best seats at concerts, sports games, and more!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/blog-2.jpg" class="card-img-top" alt="Blog Post 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Maximize Your Coupon Savings</h5>
+                        <p class="card-text">Learn how to use coupons effectively and save big on your favorite products and services.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/blog-3.jpg" class="card-img-top" alt="Blog Post 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Best Events Coming in 2024</h5>
+                        <p class="card-text">Get a sneak peek at the biggest and most anticipated events of the year, from concerts to festivals.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            How do I buy tickets on CouponHub?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can browse available events on our platform, select your desired event, and purchase tickets securely through our website.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Can I trade or sell my coupons?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, you can list your unused coupons for sale or trade them with other users on our platform.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            What payment methods do you accept?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        We accept all major credit cards, debit cards, and digital wallets such as PayPal and Google Pay.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Enhanced Contact Us Section with Google Map -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+            <!-- Google Map -->
+            <div class="col-md-6">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Testimonials Section -->
+
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">What Our Users Say</h2>
+        <div class="row">
+
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"CouponHub has completely changed how I get event tickets. I always find the best deals and it's so easy to use!"</p>
+                        <h5 class="card-title">Akula</h5>
+                        <p class="card-subtitle text-muted">Regular User</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"I love using the platform to discover coupons for my favorite restaurants and stores. It saves me so much money!"</p>
+                        <h5 class="card-title">Nitta</h5>
+                        <p class="card-subtitle text-muted">Satisfied Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"The user experience is flawless! I can trade my unused tickets and never miss out on any event in my city!"</p>
+                        <h5 class="card-title">Chunduru</h5>
+                        <p class="card-subtitle text-muted">Event Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Newsletter Subscription Section -->
+<section id="newsletter" class="py-5 text-white" style="background-color: #333;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>Stay Updated with the Latest Events & Offers</h2>
+                <p>Subscribe to our newsletter to get exclusive access to new events, promotions, and coupons.</p>
+                <form class="form-inline justify-content-center">
+                    <input type="email" class="form-control mb-2 mr-sm-2" id="emailSubscription" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Footer Section (Expanded) -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024  All rights reserved to Nitish Chunduru.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+        </ul>
+        <ul class="list-inline">
+            <i class="bi bi-facebook mx-2" ></i>
+           
+            <i class="bi bi-twitter mx-2"></i>
+           
+            <i class="bi bi-instagram mx-2"></i>
+
+            
+        </ul>
+    </footer>
+
+
+
+
+    
+   
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
